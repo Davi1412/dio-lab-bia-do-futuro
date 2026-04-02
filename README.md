@@ -1,12 +1,16 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🤖 Professor de jogos no roblox Inteligente com IA Generativa
 
 ## Contexto
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+O avanço das tecnologias digitais e das plataformas de criação de jogos trouxe novas possibilidades para a educação e para o desenvolvimento de habilidades criativas. O Roblox, como ambiente de criação e interação, tornou-se uma ferramenta poderosa para jovens e adultos aprenderem conceitos de programação, design de jogos e colaboração online.
+
+Nesse cenário, surge a figura do Professor de Jogos no Roblox Inteligente com IA Generativa: um educador que combina o domínio da plataforma com o uso de inteligência artificial para potencializar o aprendizado. A IA generativa atua como suporte criativo e técnico, ajudando na produção de cenários, personagens, scripts e até na personalização de experiências de ensino.
+
+Esse professor não apenas ensina a criar jogos, mas também orienta os alunos a desenvolverem pensamento lógico, resolução de problemas, trabalho em equipe e criatividade, utilizando a IA como parceira no processo. Assim, o aprendizado se torna mais dinâmico, interativo e alinhado às tendências tecnológicas atuais.
 
 - **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
+- **Personalizar** sugestões com base no contexto de cada usuario
+- **Cocriar soluções** ensinar funções e dar exemplos significativos
 - **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
 
 > [!TIP]
@@ -20,8 +24,8 @@ Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots
 
 Defina **o que** seu agente faz e **como** ele funciona:
 
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
+- **Caso de Uso:** Qual problema financeiro ele resolve? Ensina a criar jogos no roblox e explica cada funcionalidade 
+- **Persona e Tom de Voz:**personalidade jovem com entusiasmo em jogos e voz tranquila com tom amigável para ensino
 - **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
 - **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
 
