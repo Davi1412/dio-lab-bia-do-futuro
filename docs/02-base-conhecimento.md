@@ -47,6 +47,7 @@ with open('data/produtos_financeiro.json', 'r', encoding='8') as f:
 ```
 ### Como os dados são usados no prompt?
 > Dados nas váriaveis são consultados no começo da conversa para uso das informações e não a necessidade de consultar constatemente porque isso causaria lentidão no sistema.
+> Simplismente podemos injetar os dados necessários no próprio prompt para melhor intedimento da I.A e melhor contextualização do assunto ou questão requerida.
 
 ```text
 
