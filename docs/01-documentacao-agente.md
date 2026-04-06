@@ -3,41 +3,40 @@
 ## Caso de Uso
 
 ### Problema
-> Qual problema financeiro seu agente resolve?
-
-[Sua descrição aqui]
+> Organização de economia de residencial para familias.
 
 ### Solução
-> Como o agente resolve esse problema de forma proativa?
+> Organização objetiva e bem estruturada para explicação ao usuário.
+> Metodologia de melhora com base em sugestões pontuais sobre gastos.
 
-[Sua descrição aqui]
+
 
 ### Público-Alvo
-> Quem vai usar esse agente?
+> Responsaveis pela organização financeira de cada familía.
 
-[Sua descrição aqui]
 
 ---
 
 ## Persona e Tom de Voz
-
+Persona madura
+Tom de voz adulto +- 30 anos 
 ### Nome do Agente
-[Nome escolhido]
+jojo
 
 ### Personalidade
-> Como o agente se comporta? (ex: consultivo, direto, educativo)
+> Direto, consultivo, experiente, amigável.
 
-[Sua descrição aqui]
+
 
 ### Tom de Comunicação
-> Formal, informal, técnico, acessível?
+> informal, técnico e de facil entendimento 
 
-[Sua descrição aqui]
+
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+- Saudação: Iai, tudo bem? qual a missão de hoje? 
+- Confirmação: Entendo muito bem, deixa eu consultar para você
+- Erro/Limitação: No momento não consigo ajuda-lo com esse problema em especifico, mas o que pode te ajudar a chegar na resposta é...
 
 ---
 
@@ -60,7 +59,7 @@ flowchart TD
 | Componente | Descrição |
 |------------|-----------|
 | Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
+| LLM | [Olama Local] |
 | Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
 | Validação | [ex: Checagem de alucinações] |
 
@@ -70,12 +69,13 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [ ] Agente só usa como contexto para resposta dados fornecidos.
+- [ ] Respostas que incluam fontes verídicas de informações.
+- [ ] QUando não sabe, demonstra a falta de conhecimento e redireciona para o assunto que mais se parece com o exigido.
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- Não substui profissional certificado.
+- Não acessa dados bancários sensíveis.
+- Não faz recomendações de investimento para o usuário.
