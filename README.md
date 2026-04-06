@@ -1,13 +1,15 @@
-# 🤖 Professor de jogos no roblox Inteligente com IA Generativa
+# 🤖 Agente financeiro Inteligente com IA Generativa
 
 ## Contexto
 
-O avanço das tecnologias digitais e das plataformas de criação de jogos trouxe novas possibilidades para a educação e para o desenvolvimento de habilidades criativas. O Roblox, como ambiente de criação e interação, tornou-se uma ferramenta poderosa para jovens e adultos aprenderem conceitos de programação, design de jogos e colaboração online.
+Criar um agente inteligente capaz de apoiar clientes e analistas financeiros na tomada de decisão, automatizando tarefas e oferecendo insights personalizados.
 
-Nesse cenário, surge a figura do Professor de Jogos no Roblox Inteligente com IA Generativa: um educador que combina o domínio da plataforma com o uso de inteligência artificial para potencializar o aprendizado. A IA generativa atua como suporte criativo e técnico, ajudando na produção de cenários, personagens, scripts e até na personalização de experiências de ensino.
+⚙️ Escopo do Projeto
+Atendimento automatizado: responder dúvidas sobre produtos financeiros, investimentos e crédito em linguagem natural.
 
-Esse professor não apenas ensina a criar jogos, mas também orienta os alunos a desenvolverem pensamento lógico, resolução de problemas, trabalho em equipe e criatividade, utilizando a IA como parceira no processo. Assim, o aprendizado se torna mais dinâmico, interativo e alinhado às tendências tecnológicas atuais.
+Análise de dados: interpretar relatórios, extratos e projeções financeiras, gerando resumos e recomendações.
 
+Planejamento financeiro: sugerir estratégias de investimento e gestão de orçamento com base no perfil do usuário.
 - **Antecipar necessidades** ao invés de apenas responder perguntas
 - **Personalizar** sugestões com base no contexto de cada usuario
 - **Cocriar soluções** ensinar funções e dar exemplos significativos
