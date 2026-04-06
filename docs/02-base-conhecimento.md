@@ -6,13 +6,10 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
+| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores e dar continuidade a  |
 | `perfil_investidor.json` | JSON | Personalizar recomendações |
 | `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
-
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
+| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente e utuilizar de forma didática |
 
 ---
 
@@ -20,7 +17,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+Foi adicionado o produto fundo imobíliario para um leque mais amplo de produtos.
 
 ---
 
@@ -29,13 +26,44 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Existem duas opções para carregar os dados.
+- Injetando diretamente no código Ctrl + c Ctrl + V
+- Carregando os arquivos separadamente como no exemplo abaixo
 
+```python
+import pandas as pd
+import json
+
+# CSVs
+historico = pd_read_csv('data/historico_atendimento.csv')
+transacoes = pd.read_csv('data/transacoes.csv)
+
+# JSON
+with open(data/perfil_investidor.json', 'r' encoding='utf-8') as f:
+  perfil = json.load(f)
+
+with open('data/produtos_financeiro.json', 'r', encoding='8') as f:
+  produtos = json.loas(f)
+```
 ### Como os dados são usados no prompt?
-> Os dados vão no system prompt? São consultados dinamicamente?
+> Dados nas váriaveis são consultados no começo da conversa para uso das informações e não a necessidade de consultar constatemente porque isso causaria lentidão no sistema.
 
-[Sua descrição aqui]
+```text
 
+DADOS DO CLIENTE:
+
+
+
+TRANSAÇÕES DO CLIENTE:
+
+
+
+HISTÓRICO DO CLIENTE:
+
+
+PRODUTOS DISPONIVEIS PARA ENSINO:
+
+```
 ---
 
 ## Exemplo de Contexto Montado
