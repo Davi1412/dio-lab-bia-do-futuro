@@ -26,8 +26,8 @@ Planejamento financeiro: sugerir estratégias de investimento e gestão de orça
 
 Defina **o que** seu agente faz e **como** ele funciona:
 
-- **Caso de Uso:** Qual problema financeiro ele resolve? Ensina a criar jogos no roblox e explica cada funcionalidade 
-- **Persona e Tom de Voz:**personalidade jovem com entusiasmo em jogos e voz tranquila com tom amigável para ensino
+- **Caso de Uso:** Qual problema financeiro ele resolve? Ensina a organizar suas finaças e auxilia no ensino sobre produtos financeiros
+- **Persona e Tom de Voz:**personalidade jovem com entusiasmo em finaças 
 - **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
 - **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
 
