@@ -1,4 +1,4 @@
-# 🤖 Agente financeiro Inteligente com IA Generativa
+# 🤖 Agente financeiro focado em economia residencial
 
 ## Contexto
 
