@@ -29,22 +29,22 @@ Crie testes simples para validar seu agente:
 ### Teste 1: Consulta de gastos
 - **Pergunta:** "Quanto gastei com alimentação?"
 - **Resposta esperada:** Valor baseado no `transacoes.csv`
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 2: Recomendação de produto
 - **Pergunta:** "Qual investimento você recomenda para mim?"
 - **Resposta esperada:** Produto compatível com o perfil do cliente
-- **Resultado:** [ ] Correto  [ ] Incorreto
-
+- **Resultado:** [x] Correto  [ ] Incorreto
+- **OBS:** não recomendou um produto como específicado nas regras e sim explicou sobre reserva de emergência que pode ser um bom começo para quem quer investir, e em seguida falando sobre cdb que pode ser o lugar para guardar essa reseva.
 ### Teste 3: Pergunta fora do escopo
 - **Pergunta:** "Qual a previsão do tempo?"
 - **Resposta esperada:** Agente informa que só trata de finanças
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ### Teste 4: Informação inexistente
 - **Pergunta:** "Quanto rende o produto XYZ?"
 - **Resposta esperada:** Agente admite não ter essa informação
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [x] Correto  [ ] Incorreto
 
 ---
 
@@ -53,10 +53,14 @@ Crie testes simples para validar seu agente:
 Após os testes, registre suas conclusões:
 
 **O que funcionou bem:**
-- [Liste aqui]
+- Consulta sobre produtos.
+- Explicação detalhada sobre funcionamento de cada produto.
+- Did[atica boa para assuntos financeiros e ótimos meios de organização.
 
 **O que pode melhorar:**
-- [Liste aqui]
+- velocidade na resposta.
+- registrar informações nos arquivos scv via chat.
+- exemplos de aplicação em cada produto com base na % do mesmo.
 
 ---
 
