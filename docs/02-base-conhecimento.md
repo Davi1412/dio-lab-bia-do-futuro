@@ -34,16 +34,10 @@ Existem duas opções para carregar os dados.
 import pandas as pd
 import json
 
-# CSVs
-historico = pd_read_csv('data/historico_atendimento.csv')
-transacoes = pd.read_csv('data/transacoes.csv)
-
-# JSON
-with open(data/perfil_investidor.json', 'r' encoding='utf-8') as f:
-  perfil = json.load(f)
-
-with open('data/produtos_financeiro.json', 'r', encoding='8') as f:
-  produtos = json.loas(f)
+perfil = json.load(open('./data/perfil_investidor.json'))
+transacoes = pd.read_csv('./data/transacoes.csv')
+historico = pd.read_csv('./data/historico_atendimento.csv')
+produtos = json.load(open('./data/produtos_financeiros.json'))
 ```
 ### Como os dados são usados no prompt?
 > Dados nas váriaveis são consultados no começo da conversa para uso das informações e não a necessidade de consultar constatemente porque isso causaria lentidão no sistema.
