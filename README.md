@@ -1,155 +1,169 @@
-# 🤖 Agente financeiro focado em economia residencial
+# 🌟 STARDUST CRUSADERS — Agente Financeiro do Stand Monetário
 
-## Contexto
-
-Criar um agente inteligente capaz de apoiar clientes e analistas financeiros na tomada de decisão, automatizando tarefas e oferecendo insights personalizados.
-
-⚙️ Escopo do Projeto
-Atendimento automatizado: responder dúvidas sobre produtos financeiros, investimentos e crédito em linguagem natural.
-
-Análise de dados: interpretar relatórios, extratos e projeções financeiras, gerando resumos e recomendações.
-
-Planejamento financeiro: sugerir estratégias de investimento e gestão de orçamento com base no perfil do usuário.
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada usuario
-- **Cocriar soluções** ensinar funções e dar exemplos significativos
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+> *"Yare yare daze... suas finanças estão uma bagunça. Mas não se preocupe — nosso Stand veio para consertar isso."*
+> — Jotaro Kujo, provavelmente
 
 ---
 
-## O Que Você Deve Entregar
+## ✦ Contexto da Jornada
 
-### 1. Documentação do Agente
+Assim como os Crusaders atravessaram o mundo para derrotar DIO, este agente foi criado para derrotar o **maior vilão das finanças pessoais: a desorganização**. Com o poder do Stand **「MONEY ANALYST」**, clientes e analistas financeiros ganham um aliado inteligente na tomada de decisão.
 
-Defina **o que** seu agente faz e **como** ele funciona:
+⚙️ **Habilidades do Stand**
 
-- **Caso de Uso:** Qual problema financeiro ele resolve? Ensina a organizar suas finaças e auxilia no ensino sobre produtos financeiros
-- **Persona e Tom de Voz:**personalidade jovem com entusiasmo em finaças 
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
+- **Atendimento automático:** responde dúvidas sobre produtos financeiros, investimentos e crédito em linguagem natural — como a leitura de pensamentos de Hierophant Green, mas para finanças.
+- **Análise de dados:** interpreta relatórios, extratos e projeções como o Hermit Purple revela o passado e o futuro.
+- **Planejamento financeiro:** sugere estratégias de investimento e gestão de orçamento com base no perfil do usuário — cada Crusader tem seu estilo, cada investidor também.
 
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+> **Habilidades especiais do Stand:**
+> - **Antecipar necessidades** ao invés de apenas responder perguntas *(como a precognição de Magician's Red)*
+> - **Personalizar** sugestões com base no contexto de cada usuário *(todo Stand reflete sua alma)*
+> - **Cocriar soluções** — ensinar funções e dar exemplos significativos *(o método Polnareff de aprender na prática)*
+> - **Garantir segurança** e confiabilidade nas respostas — **sem alucinações, sem ilusões de DIO**
 
 ---
 
-### 2. Base de Conhecimento
+## 🗺️ A Jornada (O Que Você Deve Entregar)
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+Assim como a viagem de Jotaro levou 50 dias de Tóquio ao Cairo, este projeto tem suas etapas. Cada entrega é uma batalha vencida no caminho.
+
+---
+
+### ✦ Etapa 1 — O Mapa da Jornada (Documentação do Agente)
+
+Antes de partir, os Crusaders precisavam de um plano. Defina **o que** seu agente faz e **como** ele funciona:
+
+- **Caso de Uso:** Qual Stand financeiro ele invoca? Organizar finanças e ensinar sobre produtos financeiros
+- **Persona e Tom de Voz:** Personalidade jovem e entusiasmada — energia do Narancia com o conhecimento do Speedwagon
+- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento *(o Speedwagon Foundation por trás das cenas)*
+- **Segurança:** Como evitar alucinações? **ZA WARUDO não pode parar nossas verificações de fatos**
+
+📄 **Mapa:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+
+---
+
+### ✦ Etapa 2 — O Grimório do Speedwagon Foundation (Base de Conhecimento)
+
+A Speedwagon Foundation guarda todos os segredos sobre os Stands. Nossa base de dados guarda os segredos financeiros do usuário:
 
 | Arquivo | Formato | Descrição |
 |---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
+| `transacoes.csv` | CSV | Histórico de transações — *o diário de batalhas do Crusader* |
+| `historico_atendimento.csv` | CSV | Histórico de atendimentos — *memórias do Hermit Purple* |
+| `perfil_investidor.json` | JSON | Perfil e preferências — *a alma que define seu Stand* |
+| `produtos_financeiros.json` | JSON | Produtos e serviços — *o arsenal do Speedwagon Foundation* |
 
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+📄 **Grimório:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
 
 ---
 
-### 3. Prompts do Agente
+### ✦ Etapa 3 — O Grito do Stand (Prompts do Agente)
 
-Documente os prompts que definem o comportamento do seu agente:
+Todo Stand tem seu grito. Os prompts são a voz do nosso 「MONEY ANALYST」:
 
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
+- **System Prompt:** As regras do Stand — comportamento, restrições e propósito *(como o Joestar Birthmark, sempre presente)*
+- **Exemplos de Interação:** Cenários de batalha com entrada e saída esperada
+- **Tratamento de Edge Cases:** Como o agente lida com situações limite — *"Ora ora ora" para inputs inesperados*
 
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
+📄 **Grito:** [`docs/03-prompts.md`](./docs/03-prompts.md)
 
 ---
 
-### 5. Avaliação e Métricas
+### ✦ Etapa 4 — O Stand em Ação (Aplicação Funcional)
 
-Descreva como você avalia a qualidade do seu agente:
+Um Stand que não se manifesta não serve para nada. Desenvolva o protótipo:
 
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
+- Chatbot interativo — *o Stand se materializa diante do usuário* *(sugestão: Streamlit, Gradio ou similar)*
+- Integração com LLM via API ou modelo local — *a conexão Stand-Usuário*
+- Conexão com a base de conhecimento — *o Hermit Purple revelando os dados*
 
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
+📁 **Manifestação:** [`src/`](./src/)
 
 ---
 
-## Ferramentas Sugeridas
+### ✦ Etapa 5 — O Medidor de Poder (Avaliação e Métricas)
 
-Todas as ferramentas abaixo possuem versões gratuitas:
+Cada Stand tem uma classificação de Poder, Velocidade e Precisão. Avalie o seu:
+
+- **Precisão/assertividade das respostas** — *Poder do Stand*
+- **Taxa de respostas seguras (sem alucinações)** — *Persistência — nenhuma ilusão de DIO passa*
+- **Coerência com o perfil do cliente** — *Alcance — quão bem conhecemos nossa alma*
+
+📄 **Medidor:** [`docs/04-metricas.md`](./docs/04-metricas.md)
+
+---
+
+### ✦ Etapa 6 — O Requiem (Pitch)
+
+*"Este é... o Requiem do nosso agente."*
+
+Grave um **pitch de 3 minutos** apresentando:
+
+- Qual problema financeiro seu agente resolve? *(Qual é o DIO das suas finanças?)*
+- Como ele funciona na prática? *(Demonstre o Stand em batalha)*
+- Por que essa solução é inovadora? *(Por que 「MONEY ANALYST」 supera qualquer outro Stand?)*
+
+📄 **Requiem:** [`docs/05-pitch.md`](./docs/05-pitch.md)
+
+---
+
+## 🔱 Arsenal dos Crusaders (Ferramentas Sugeridas)
+
+Cada Crusader escolhe sua arma. Todas as ferramentas abaixo têm versões gratuitas:
 
 | Categoria | Ferramentas |
 |-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
+| **LLMs** *(os Stands)* | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
+| **Desenvolvimento** *(o campo de batalha)* | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
+| **Orquestração** *(o Speedwagon Foundation)* | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
+| **Diagramas** *(mapas da jornada)* | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
 
 ---
 
-## Estrutura do Repositório
+## 🗂️ A Rota dos Crusaders (Estrutura do Repositório)
 
 ```
-📁 lab-agente-financeiro/
+📁 stardust-agente-financeiro/
 │
-├── 📄 README.md
+├── 📄 README.md                          ← Você está aqui, Crusader
 │
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
+├── 📁 data/                              # Grimório do Speedwagon Foundation
+│   ├── historico_atendimento.csv         # Memórias do Hermit Purple
+│   ├── perfil_investidor.json            # A alma que define o Stand
+│   ├── produtos_financeiros.json         # Arsenal disponível
+│   └── transacoes.csv                    # Diário de batalhas financeiras
 │
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
+├── 📁 docs/                              # O mapa da jornada
+│   ├── 01-documentacao-agente.md         # O plano antes de partir
+│   ├── 02-base-conhecimento.md           # Estratégia de dados
+│   ├── 03-prompts.md                     # O grito do Stand
+│   ├── 04-metricas.md                    # O medidor de poder
+│   └── 05-pitch.md                       # O Requiem
 │
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
+├── 📁 src/                               # O Stand se manifesta
+│   └── app.py                            # A batalha começa aqui
 │
-├── 📁 assets/                        # Imagens e diagramas
+├── 📁 assets/                            # Imagens e diagramas
 │   └── ...
 │
-└── 📁 examples/                      # Referências e exemplos
+└── 📁 examples/                          # Referências de batalhas anteriores
     └── README.md
 ```
 
 ---
 
-## Dicas Finais
+## ✦ Os Mandamentos dos Crusaders (Dicas Finais)
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+> *"Um Stand fraco nasce de um prompt fraco."* — Joseph Joestar, com o Hermit Purple
+
+1. **Comece pelo prompt:** Um bom system prompt é a base de um Stand poderoso — sem ele, o agente é tão inútil quanto o Strength sem o gorila
+2. **Use os dados mockados:** Eles garantem consistência — os Crusaders sempre verificaram as informações antes de agir
+3. **Foque na segurança:** No setor financeiro, alucinações são como as ilusões do DIO — **perigosas e inaceitáveis**
+4. **Teste cenários reais:** Simule perguntas que um cliente faria — treine como Jotaro treinava o Star Platinum
+5. **Seja direto no pitch:** 3 minutos passam rápido — *"Yare yare daze"*, vá direto ao ponto
+
+---
+
+*「MONEY ANALYST」 — Its power is financial insight. Its range is unlimited. And it never sleeps.*
+
+> *"The enemy... is DIO. And DIO is your debt."*
